@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<title>My Memo</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link rel="stylesheet" href="style/memo.css">
+</head>
+<body>
+	<div class="header_container">
+		<div class="header_inner">
+			<div class="header_title">
+				Memo
+			</div>
+			<div class="header_nav">
+				<div class="user_write">
+					<i class="fa fa-pencil" aria-hidden="true"></i>
+				</div>
+				<div class="user_favorite">
+					<i class="fa fa-heart"></i>
+					<div class="tooltip_container favorite">
+						<div class="favorite_list">
+							hello
+						</div>
+						<div class="favorite_fetch">
+							더보기
+						</div>
+					</div>
+				</div>
+
+				<div class="user_thumbnail">
+					<img src="image/facebook-logo.jpeg" alt="thumbnail">
+					<div class="tooltip_container thumbnail">
+						<div class="tooltip_profile">
+							<img src="image/facebook-logo.jpeg" alt="thumbnail">
+							<div class="user_infomation">
+								<div class="user_infomation_name">
+									류한경
+								</div>
+								<div class="user_infomation_email">
+									webfrontend@naver.com
+								</div>
+							</div>
+						</div>
+						<div class="tooltip_menu">
+							<i class="fa fa-address-card-o"></i>
+							<div class="tooltip_menu_text">내 정보</div>
+						</div>
+						<div class="tooltip_menu">
+							<i class="fa fa-bookmark"></i>
+							<div class="tooltip_menu_text">도움말</div>
+						</div>
+						<div class="tooltip_menu"> 
+							<i class="fa fa-sign-out"></i>
+							<div class="tooltip_menu_text">로그아웃</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="memo_container">
+		<div class="memo_list_container"></div>
+	</div>
+	<div class="modal_container none">
+		<div class="modal_inner">
+			<div class="modal_inner_title">
+				메모
+			</div>
+			<input type="text" class="input_writer" placeholder="제목">
+			<textarea class="memo_textarea" placeholder="내용"></textarea>
+			<div class="memo_send_button">
+				작성하기
+			</div>
+		</div>
+		
+	</div>
+	<div class="dimmed none"></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+	<script src="js/memo.js"></script>
+</body>
+</html>
